@@ -3,6 +3,8 @@ import { PageShell, PageHero } from "@/components/site/PageShell";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { FinalCTA } from "@/components/site/CTA";
 import talentImg from "@/assets/talent-startups.jpg";
+import studentsImg from "@/assets/students.jpg";
+import cityImg from "@/assets/city.jpg";
 
 export const Route = createFileRoute("/talent-4-startups")({
   head: () => ({
@@ -44,6 +46,15 @@ function T4SPage() {
               <div className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.d}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="container-x grid md:grid-cols-2 gap-6 pb-8">
+        <div className="aspect-[16/10] overflow-hidden rounded-md border border-hairline">
+          <img src={studentsImg} alt="" className="h-full w-full object-cover" loading="lazy" />
+        </div>
+        <div className="aspect-[16/10] overflow-hidden rounded-md border border-hairline">
+          <img src={cityImg} alt="" className="h-full w-full object-cover" loading="lazy" />
         </div>
       </section>
 

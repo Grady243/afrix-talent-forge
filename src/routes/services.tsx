@@ -3,6 +3,8 @@ import { PageShell, PageHero } from "@/components/site/PageShell";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { FinalCTA } from "@/components/site/CTA";
 import servicesImg from "@/assets/services.jpg";
+import codeImg from "@/assets/code.jpg";
+import mentorshipImg from "@/assets/mentorship.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -58,6 +60,15 @@ function ServicesPage() {
               </ul>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="container-x py-8 grid md:grid-cols-2 gap-6">
+        <div className="aspect-[16/10] overflow-hidden rounded-md border border-hairline">
+          <img src={codeImg} alt="" className="h-full w-full object-cover" loading="lazy" />
+        </div>
+        <div className="aspect-[16/10] overflow-hidden rounded-md border border-hairline">
+          <img src={mentorshipImg} alt="" className="h-full w-full object-cover" loading="lazy" />
         </div>
       </section>
 
