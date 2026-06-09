@@ -4,6 +4,9 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { FinalCTA } from "@/components/site/CTA";
 import { Code2, Smartphone, Brain, Palette, Megaphone } from "lucide-react";
 import programsImg from "@/assets/programs.jpg";
+import studentsImg from "@/assets/students.jpg";
+import mentorshipImg from "@/assets/mentorship.jpg";
+import codeImg from "@/assets/code.jpg";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
@@ -54,6 +57,17 @@ function ProgramsPage() {
               </div>
               <h3 className="mt-6 font-display text-2xl font-bold">{p.title}</h3>
               <p className="mt-3 text-muted-foreground leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Image gallery */}
+      <section className="container-x pb-8">
+        <div className="grid md:grid-cols-3 gap-4">
+          {[studentsImg, mentorshipImg, codeImg].map((src, i) => (
+            <div key={i} className="aspect-[4/3] overflow-hidden rounded-md border border-hairline">
+              <img src={src} alt="" className="h-full w-full object-cover" loading="lazy" />
             </div>
           ))}
         </div>

@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, PageHero } from "@/components/site/PageShell";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { FinalCTA } from "@/components/site/CTA";
+import cityImg from "@/assets/city.jpg";
+import foundersImg from "@/assets/founders.jpg";
 
 export const Route = createFileRoute("/partners")({
   head: () => ({
@@ -34,6 +36,8 @@ function PartnersPage() {
         eyebrow="Partners"
         title={<>Building Africa's digital future, <span className="text-accent">together.</span></>}
         description="We partner with foundations, governments, NGOs and global tech companies to scale opportunity across the continent."
+        image={cityImg}
+        imageAlt="African skyline"
       />
 
       <section className="container-x py-24">
@@ -57,6 +61,12 @@ function PartnersPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="container-x pb-8">
+        <div className="aspect-[21/9] overflow-hidden rounded-md border border-hairline">
+          <img src={foundersImg} alt="Founder on stage" className="h-full w-full object-cover" loading="lazy" />
         </div>
       </section>
 

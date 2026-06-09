@@ -3,6 +3,8 @@ import { PageShell, PageHero } from "@/components/site/PageShell";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { FinalCTA } from "@/components/site/CTA";
 import innovationImg from "@/assets/innovation.jpg";
+import coworkingImg from "@/assets/coworking.jpg";
+import foundersImg from "@/assets/founders.jpg";
 
 export const Route = createFileRoute("/innovation-hub")({
   head: () => ({
@@ -45,6 +47,15 @@ function HubPage() {
               <div className="mt-3 text-sm text-muted-foreground leading-relaxed">{a.d}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="container-x pb-8 grid md:grid-cols-2 gap-6">
+        <div className="aspect-[4/3] overflow-hidden rounded-md border border-hairline">
+          <img src={coworkingImg} alt="Coworking space" className="h-full w-full object-cover" loading="lazy" />
+        </div>
+        <div className="aspect-[4/3] overflow-hidden rounded-md border border-hairline">
+          <img src={foundersImg} alt="Founder on stage" className="h-full w-full object-cover" loading="lazy" />
         </div>
       </section>
 
