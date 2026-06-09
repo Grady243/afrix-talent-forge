@@ -1,35 +1,37 @@
 import { Link } from "@tanstack/react-router";
-
-const cols = [
-  {
-    title: "Ecosystem",
-    links: [
-      { to: "/programs", label: "Programs" },
-      { to: "/talent-4-startups", label: "Talent 4 Startups" },
-      { to: "/services", label: "Services" },
-      { to: "/innovation-hub", label: "Innovation Hub" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { to: "/about", label: "About" },
-      { to: "/projects", label: "Projects" },
-      { to: "/impact", label: "Impact" },
-      { to: "/partners", label: "Partners" },
-    ],
-  },
-  {
-    title: "Connect",
-    links: [
-      { to: "/contact", label: "Contact" },
-      { to: "/partners", label: "Become a partner" },
-      { to: "/programs", label: "Apply now" },
-    ],
-  },
-] as const;
+import { useT } from "@/lib/i18n";
 
 export function SiteFooter() {
+  const t = useT();
+  const cols = [
+    {
+      title: t("footer.col.ecosystem"),
+      links: [
+        { to: "/programs", label: t("nav.programs") },
+        { to: "/talent-4-startups", label: t("nav.talent") },
+        { to: "/services", label: t("nav.services") },
+        { to: "/innovation-hub", label: t("nav.hub") },
+      ],
+    },
+    {
+      title: t("footer.col.company"),
+      links: [
+        { to: "/about", label: t("nav.about") },
+        { to: "/projects", label: t("nav.projects") },
+        { to: "/impact", label: t("nav.impact") },
+        { to: "/partners", label: t("nav.partners") },
+      ],
+    },
+    {
+      title: t("footer.col.connect"),
+      links: [
+        { to: "/contact", label: t("nav.contact") },
+        { to: "/partners", label: t("footer.becomePartner") },
+        { to: "/programs", label: t("nav.apply") },
+      ],
+    },
+  ];
+
   return (
     <footer className="border-t border-hairline mt-32">
       <div className="container-x py-20">
@@ -40,12 +42,12 @@ export function SiteFooter() {
               Afrix Global
             </Link>
             <p className="mt-6 text-sm text-muted-foreground max-w-sm leading-relaxed">
-              A Talent, Innovation & Opportunity Ecosystem training, deploying and
-              monetizing African digital talent through real-world international projects.
+              {t("footer.tagline")}
             </p>
             <p className="mt-8 font-display text-2xl font-bold tracking-tight">
-              We train. <span className="text-muted-foreground">We create.</span>{" "}
-              <span className="text-accent">We connect.</span>
+              {t("footer.slogan.train")}{" "}
+              <span className="text-muted-foreground">{t("footer.slogan.create")}</span>{" "}
+              <span className="text-foreground">{t("footer.slogan.connect")}</span>
             </p>
           </div>
 
@@ -71,7 +73,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-hairline flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Afrix Global. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Afrix Global. {t("footer.rights")}</div>
           <div className="flex gap-6">
             <a href="mailto:hello@afrixglobal.com" className="hover:text-foreground">hello@afrixglobal.com</a>
             <a href="#" className="hover:text-foreground">LinkedIn</a>
