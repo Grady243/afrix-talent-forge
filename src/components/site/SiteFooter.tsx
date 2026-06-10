@@ -38,7 +38,7 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-              <span className="inline-block h-2 w-2 bg-accent" />
+              <span className="inline-block h-2 w-2 bg-brand" />
               Afrix Global
             </Link>
             <p className="mt-6 text-sm text-muted-foreground max-w-sm leading-relaxed">

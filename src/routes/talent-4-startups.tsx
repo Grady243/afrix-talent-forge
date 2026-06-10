@@ -41,7 +41,7 @@ function T4SPage() {
         <div className="mt-14 grid md:grid-cols-4 gap-px bg-hairline border border-hairline rounded-md overflow-hidden">
           {steps.map((s) => (
             <div key={s.k} className="bg-background p-8">
-              <div className="font-mono text-xs text-accent">{s.k}</div>
+              <div className="font-mono text-xs text-brand">{s.k}</div>
               <div className="mt-6 font-display text-xl font-bold">{s.t}</div>
               <div className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.d}</div>
             </div>
@@ -61,7 +61,7 @@ function T4SPage() {
       <section className="border-y border-hairline bg-surface">
         <div className="container-x py-24 md:py-32 grid lg:grid-cols-2 gap-10">
           <div className="border border-hairline rounded-md p-10 bg-background">
-            <div className="text-xs uppercase tracking-widest text-accent">For talent</div>
+            <div className="text-xs uppercase tracking-widest text-brand">For talent</div>
             <h3 className="mt-4 font-display text-3xl font-bold">Build a global career from Africa.</h3>
             <ul className="mt-6 space-y-3 text-muted-foreground">
               <li>· Access to international startup roles</li>
@@ -71,7 +71,7 @@ function T4SPage() {
             </ul>
           </div>
           <div className="border border-hairline rounded-md p-10 bg-background">
-            <div className="text-xs uppercase tracking-widest text-accent">For startups</div>
+            <div className="text-xs uppercase tracking-widest text-brand">For startups</div>
             <h3 className="mt-4 font-display text-3xl font-bold">Hire pre-vetted, ship-ready talent.</h3>
             <ul className="mt-6 space-y-3 text-muted-foreground">
               <li>· Engineers and designers screened on real projects</li>

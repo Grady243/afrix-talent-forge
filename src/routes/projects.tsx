@@ -69,7 +69,7 @@ function ProjectsPage() {
                 <img src={p.img} alt={p.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
               </div>
               <div className="mt-5 flex items-center justify-between text-xs uppercase tracking-wider">
-                <span className="text-accent">{p.cat}</span>
+                <span className="text-brand">{p.cat}</span>
                 <span className="text-muted-foreground font-mono">{p.year}</span>
               </div>
               <h3 className="mt-2 font-display text-2xl font-bold">{p.title}</h3>

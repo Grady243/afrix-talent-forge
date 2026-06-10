@@ -52,7 +52,7 @@ function ProgramsPage() {
           {programs.map((p) => (
             <div key={p.title} className="bg-background p-8">
               <div className="flex items-start justify-between">
-                <p.icon className="text-accent" size={26} />
+                <p.icon className="text-brand" size={26} />
                 <span className="font-mono text-xs text-muted-foreground">{p.duration}</span>
               </div>
               <h3 className="mt-6 font-display text-2xl font-bold">{p.title}</h3>
@@ -79,7 +79,7 @@ function ProgramsPage() {
           <div className="mt-14 grid md:grid-cols-4 gap-px bg-hairline border border-hairline rounded-md overflow-hidden">
             {methodology.map((x) => (
               <div key={x.k} className="bg-background p-8">
-                <div className="font-mono text-xs text-accent">{x.k}</div>
+                <div className="font-mono text-xs text-brand">{x.k}</div>
                 <div className="mt-6 font-display text-xl font-bold">{x.t}</div>
                 <div className="mt-3 text-sm text-muted-foreground leading-relaxed">{x.d}</div>
               </div>

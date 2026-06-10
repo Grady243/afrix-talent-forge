@@ -29,7 +29,7 @@ export function PageHero({
     <section className="relative border-b border-hairline">
       <div className="absolute inset-0 hairline-grid opacity-30 fade-mask-b" />
       <div className="container-x relative pt-20 pb-20 md:pt-28 md:pb-28">
-        <div className="text-xs uppercase tracking-[0.18em] text-accent">{eyebrow}</div>
+        <div className="text-xs uppercase tracking-[0.18em] text-brand">{eyebrow}</div>
         <h1 className="mt-6 font-display text-5xl md:text-7xl font-bold tracking-tight max-w-5xl text-balance">
           {title}
         </h1>
