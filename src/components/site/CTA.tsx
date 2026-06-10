@@ -29,7 +29,7 @@ export function GhostCTA({ to, children }: { to: string; children: React.ReactNo
   return (
     <Link
       to={to}
-      className="group inline-flex h-11 items-center gap-2 px-1 text-sm font-medium text-accent hover:text-accent/80 transition-colors"
+      className="group inline-flex h-11 items-center gap-2 px-1 text-sm font-medium text-brand hover:text-brand/80 transition-colors"
     >
       {children}
       <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

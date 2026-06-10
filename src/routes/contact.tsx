@@ -95,7 +95,7 @@ function Field({ label, name, type = "text", required }: { label: string; name: 
 function Card({ icon: Icon, title, lines }: { icon: typeof Mail; title: string; lines: string[] }) {
   return (
     <div className="border border-hairline rounded-md p-6">
-      <Icon className="text-accent" size={20} />
+      <Icon className="text-brand" size={20} />
       <div className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">{title}</div>
       <div className="mt-2 space-y-1 text-sm">
         {lines.map((l) => <div key={l}>{l}</div>)}

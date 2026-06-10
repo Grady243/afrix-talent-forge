@@ -10,9 +10,7 @@ const nav = [
   { to: "/talent-4-startups", key: "nav.talent" },
   { to: "/services", key: "nav.services" },
   { to: "/innovation-hub", key: "nav.hub" },
-  { to: "/projects", key: "nav.projects" },
   { to: "/impact", key: "nav.impact" },
-  { to: "/partners", key: "nav.partners" },
 ] as const;
 
 export function SiteHeader() {
@@ -22,11 +20,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-hairline bg-background/70 backdrop-blur-xl">
       <div className="container-x flex h-16 items-center justify-between gap-6">
         <Link to="/" className="flex items-center gap-2 font-display text-base font-bold tracking-tight">
-          <span className="inline-block h-2 w-2 bg-accent" />
+          <span className="inline-block h-2 w-2 bg-brand" />
           Afrix Global
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-7 text-sm text-muted-foreground">
+        <nav className="hidden lg:flex items-center gap-6 text-sm text-muted-foreground">
           {nav.map((n) => (
             <Link
               key={n.to}

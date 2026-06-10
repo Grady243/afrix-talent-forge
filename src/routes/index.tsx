@@ -141,7 +141,7 @@ function HomePage() {
                 <img src={e.img} alt={e.title} className="h-full w-full object-cover" loading="lazy" />
               </div>
               <div className="p-7">
-                <e.icon className="text-accent" size={26} />
+                <e.icon className="text-brand" size={26} />
                 <h3 className="mt-5 font-display text-2xl font-bold">{e.title}</h3>
                 <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{e.desc}</p>
               </div>
@@ -163,7 +163,7 @@ function HomePage() {
           <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-px bg-hairline border border-hairline rounded-md overflow-hidden">
             {programs.map((p) => (
               <div key={p.title} className="bg-background p-6">
-                <p.icon className="text-accent" size={22} />
+                <p.icon className="text-brand" size={22} />
                 <h4 className="mt-5 font-display text-base font-bold">{p.title}</h4>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
               </div>
@@ -211,7 +211,7 @@ function HomePage() {
             <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
               {["Startup incubation","Hackathons","Mentorship","Investor network","Coworking","Prototyping"].map((x) => (
                 <div key={x} className="flex items-center gap-2 text-foreground/80">
-                  <span className="inline-block h-1 w-1 bg-accent" />{x}
+                  <span className="inline-block h-1 w-1 bg-brand" />{x}
                 </div>
               ))}
             </div>
@@ -242,7 +242,7 @@ function HomePage() {
               <div className="aspect-[4/3] overflow-hidden rounded-md border border-hairline">
                 <img src={p.img} alt={p.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
               </div>
-              <div className="mt-4 text-xs uppercase tracking-wider text-accent">{p.tag}</div>
+              <div className="mt-4 text-xs uppercase tracking-wider text-brand">{p.tag}</div>
               <div className="mt-2 font-display text-lg font-bold flex items-start justify-between gap-3">
                 {p.title}
                 <ArrowUpRight size={18} className="opacity-60 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

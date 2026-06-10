@@ -47,7 +47,7 @@ function AboutPage() {
       {/* Mission / Vision */}
       <section className="container-x py-24 md:py-32 grid md:grid-cols-2 gap-12">
         <div className="border border-hairline rounded-md p-10">
-          <div className="text-xs uppercase tracking-widest text-accent">Mission</div>
+          <div className="text-xs uppercase tracking-widest text-brand">Mission</div>
           <h3 className="mt-4 font-display text-3xl font-bold">Train, create, connect.</h3>
           <ul className="mt-6 space-y-3 text-muted-foreground">
             <li>· Train digital professionals.</li>
@@ -57,7 +57,7 @@ function AboutPage() {
           </ul>
         </div>
         <div className="border border-hairline rounded-md p-10 bg-surface">
-          <div className="text-xs uppercase tracking-widest text-accent">Vision</div>
+          <div className="text-xs uppercase tracking-widest text-brand">Vision</div>
           <h3 className="mt-4 font-display text-3xl font-bold">Africa's leading digital ecosystem.</h3>
           <p className="mt-6 text-muted-foreground leading-relaxed">
             To become Africa's leading ecosystem for digital talent, innovation and opportunity
@@ -79,7 +79,7 @@ function AboutPage() {
               { k: "04", t: "We connect continents", d: "African talent matched to global opportunity." },
             ].map((x) => (
               <div key={x.k} className="bg-background p-8">
-                <div className="font-mono text-xs text-accent">{x.k}</div>
+                <div className="font-mono text-xs text-brand">{x.k}</div>
                 <div className="mt-6 font-display text-xl font-bold">{x.t}</div>
                 <div className="mt-3 text-sm text-muted-foreground leading-relaxed">{x.d}</div>
               </div>
@@ -94,7 +94,7 @@ function AboutPage() {
         <div className="mt-14 border-t border-hairline">
           {timeline.map((t) => (
             <div key={t.year} className="grid md:grid-cols-[140px_1fr] gap-6 py-8 border-b border-hairline">
-              <div className="font-mono text-sm text-accent">{t.year}</div>
+              <div className="font-mono text-sm text-brand">{t.year}</div>
               <div>
                 <div className="font-display text-xl font-bold">{t.title}</div>
                 <div className="mt-2 text-muted-foreground">{t.desc}</div>

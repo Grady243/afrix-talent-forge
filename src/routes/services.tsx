@@ -53,7 +53,7 @@ function ServicesPage() {
         <div className="mt-14 grid md:grid-cols-2 gap-px bg-hairline border border-hairline rounded-md overflow-hidden">
           {services.map((s) => (
             <div key={s.title} className="bg-background p-10">
-              <div className="font-mono text-xs text-accent">PRACTICE {s.letter}</div>
+              <div className="font-mono text-xs text-brand">PRACTICE {s.letter}</div>
               <h3 className="mt-4 font-display text-3xl font-bold">{s.title}</h3>
               <ul className="mt-6 grid grid-cols-2 gap-y-2 text-sm text-muted-foreground">
                 {s.items.map((i) => <li key={i}>· {i}</li>)}

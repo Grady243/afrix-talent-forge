@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
     <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-      <span className="inline-block h-px w-6 bg-accent" />
+      <span className="inline-block h-px w-6 bg-brand" />
       {children}
     </div>
   );
